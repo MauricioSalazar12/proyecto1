@@ -322,9 +322,7 @@ while x == "continuar":
 #imprimimos los ingresos anuales
 
     if reporte == "Total de ingresos anuales":
-        suma = 0
-        for i in range(len(ingresos_por_mes)):
-            suma += ingresos_por_mes[0]
+        suma = sum(ingresos_por_mes)
             
         print("Los ingresos para el año 2020 fueron de", suma)
         
